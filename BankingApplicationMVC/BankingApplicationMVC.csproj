@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.3" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Banking.DataAccess">
+      <HintPath>..\..\BankingApplication\Banking.DataAccess\obj\Debug\net8.0\Banking.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="BankingApp">
+      <HintPath>..\..\BankingApplication\BankingApp\obj\Debug\net8.0\BankingApp.dll</HintPath>
+    </Reference>
+    <Reference Include="BankingApp.Common">
+      <HintPath>..\..\BankingApplication\BankingApp.Common\obj\Debug\net8.0\BankingApp.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="BankingApp.Entities">
+      <HintPath>..\..\BankingApplication\BankingApp.Entities\obj\Debug\net8.0\BankingApp.Entities.dll</HintPath>
+    </Reference>
+    <Reference Include="BankingApp.Process">
+      <HintPath>..\..\BankingApplication\BankingApp.Process\obj\Debug\net8.0\BankingApp.Process.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

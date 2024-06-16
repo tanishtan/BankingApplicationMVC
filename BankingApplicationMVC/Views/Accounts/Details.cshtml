@@ -1,0 +1,39 @@
+﻿@model BankingApp.Entities.AccountInfo
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+
+
+<div class="container">
+    @* Tag Helper - new tag that is supported from ASP.NET 3.1 onwards*@
+    @* <partial name="CustomerHeader.cshtml" /> *@
+    <div class="row">
+        <div class="col-10 offset-1">
+            <div class="card shadow m-auto mt-5">
+                <div class="card-header bg-warning bg-gradient opacity-75 d-flex">
+                    <div class="flex-grow-1">
+                        <h2 class="text-dark text-center">Customer Details</h2>
+                    </div>
+                    <a href="/accounts/addnew" class="btn btn-outline-dark">Add New</a>
+                </div>
+                <div class="card-body">
+                    <div class="mt-3 text-center">
+                        <dl>
+                            <dt>Account Number</dt>
+                            <dd>@Model.Id</dd>
+                            <dt>Customer Name</dt>
+                            <dd>@Model.Name</dd>
+                            <dt>Account Type</dt>
+                            <dd>@Model.Type</dd>
+                            <dt>Balance</dt>
+                            <dd>@Model.Balance</dd>
+                        </dl>
+                        <a href="/accounts/List" class="btn btn-lg btn-secondary">Back to List</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
